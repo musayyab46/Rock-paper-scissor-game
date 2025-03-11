@@ -1,0 +1,67 @@
+*{
+   margin:0;
+   padding:0; 
+   text-align:center;
+      /*  * represents complete document means the changes wil be done for the complete document*/
+
+}
+h1{
+    background-color:#081b31;
+    color:#fff;
+    height:5rem;
+    line-height: 5rem; 
+    /* line height defines the vertical spacing between the two lines  */
+}
+.choice{
+    height:165px;
+    width:165px;
+    border-radius:50%;
+}
+img{
+    height:150px;
+    width:150px;
+    object-fit:cover; 
+    border-radius:50%;
+    /* display:flex;
+    justify-content:center;
+    align-items:center; */
+    /*to display a image in a circle we have to do border-radius: 50% */
+    /* object fit:cover will enhance the quality of the image in the defined space */
+}
+/*now we have convert all the divs in the vrtical so we will convert the complete div that is choices */
+.choices{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 3rem;
+    margin-top:5rem;
+}
+.choice:hover{
+    opacity:50%;
+    cursor:pointer; 
+    /* the cursor is changed to hand cursor */
+}
+/* SCORE BOARD */
+.score-board{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    margin-top: 3rem;
+    gap:5rem;
+}
+/*  for changing the size of userscore and comp score*/
+#user-score,#comp-score{
+    font-size:4rem;
+}
+.msg-container{
+    margin-top:5rem;
+}
+#msg{
+    margin-top:5rem;
+    background-color:#081b31;
+    color:#fff;
+    display:inline;
+    padding:1rem;
+    border-radius:1rem;
+}
